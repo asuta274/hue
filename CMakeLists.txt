@@ -21,3 +21,6 @@ add_executable(${PROJECT_NAME}_test
 target_link_libraries(${PROJECT_NAME}_test ${PROJECT_NAME} ${GTEST_LIBRARIES} pthread)
 add_test(${PROJECT_NAME}_test ${PROJECT_NAME}_test)
 enable_testing()
+
+#sandbox
+add_executable(read_file sandbox/readfile.c)
