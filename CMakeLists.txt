@@ -24,3 +24,5 @@ enable_testing()
 
 #sandbox
 add_executable(read_file sandbox/readfile.c)
+add_executable(quick_select sandbox/quickselect.c)
+add_executable(wiggle_sort_ii sandbox/leetcode/wiggle-sort-ii.c)
