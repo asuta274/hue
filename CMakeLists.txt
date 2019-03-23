@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.6)
 project(hue)
 set (CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g")
+set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 include_directories(include)
 
@@ -26,3 +28,4 @@ enable_testing()
 add_executable(read_file sandbox/readfile.c)
 add_executable(quick_select sandbox/quickselect.c)
 add_executable(wiggle_sort_ii sandbox/leetcode/wiggle-sort-ii.c)
+add_executable(all_pairs_short sandbox/coursera/algo41/all_pairs.c)
